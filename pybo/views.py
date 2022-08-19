@@ -3,6 +3,7 @@ from django.utils import timezone
 from django.http import HttpResponseNotAllowed
 from .models import Question
 from .forms import QuestionForm, AnswerForm
+from django.core.paginator import Paginator
 
 # Create your views here.
 def index(request):
